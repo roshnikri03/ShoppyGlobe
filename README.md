@@ -5,7 +5,7 @@ ShoppyGlobe is a premium, modern, responsive React e-commerce application built 
 ---
 
 ## 🔗 GitHub Repository Link
-> **[(https://github.com/roshnikri03/ShoppyGlobe-E-commerce-React-Application)]**  
+> **[(https://github.com/roshnikri03/ShoppyGlobe)]**  
 
 ---
 
@@ -30,7 +30,7 @@ To launch the local development server with Vite:
 ```bash
 npm run dev
 ```
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
+Open [http://localhost:4173](http://localhost:4173) in your browser to view the application.
 
 ### Building for Production
 To compile a production bundle and run build checks:
@@ -64,27 +64,18 @@ src/
 ├── assets/          # Static elements/images
 ├── components/      # Reusable UI elements
 │   ├── Header.jsx        # Sticky glassmorphism header, search field, & cart badge
-│   ├── Header.css
 │   ├── ProductItem.jsx   # Single product card with image lazy loading & Add CTA
-│   ├── ProductItem.css
 │   ├── ProductList.jsx   # Product grid, loading spinners, & search filters
 │   ├── CartItem.jsx      # Cart row with +/- quantities & remove buttons
-│   ├── CartItem.css
-│   ├── LoadingSpinner.jsx# Suspense / load state spinner
-│   └── ErrorDisplay.jsx  # Reusable detailed error UI component
+│   ├── SuspenseFallback.jsx# Suspense / load state spinner
 ├── hooks/           # Custom React hooks
 │   └── useFetchProducts.js # Custom hook fetching from 'https://dummyjson.com/products'
 ├── pages/           # Page routes (Lazy loaded)
 │   ├── Home.jsx          # Landing page layout with Hero section
-│   ├── Home.css
 │   ├── ProductDetail.jsx # Product detail fetching & reviews/specs display
-│   ├── ProductDetail.css
-│   ├── Cart.jsx          # Active cart overview & total cost calculation
-│   ├── Cart.css
+│   ├── CartPage.jsx          # Active cart overview & total cost calculation
 │   ├── Checkout.jsx      # Dummy user info form & redirect confirmation page
-│   ├── Checkout.css
 │   └── NotFound.jsx      # Dynamic 404 route with path & error logging details
-│       └── NotFound.css
 ├── redux/           # Global state slices
 │   ├── store.js          # Root Redux store
 │   ├── cartSlice.js      # Cart actions, reducers, and selectors
